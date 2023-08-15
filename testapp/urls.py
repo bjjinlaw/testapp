@@ -9,6 +9,6 @@ router.register("tasks", TaskViewSet, basename="task")
 router.register("categories", CategoryViewSet, basename="category")
 
 urlpatterns = [
-    path("", Home, name="home"),
+    path("", Home.as_view(), name="home"),
     path("api/", include(router.urls)),
 ]
