@@ -1,10 +1,10 @@
 from rest_framework.views import APIView
-from rest_framework.viewsets import ModelViewSet
+# from rest_framework.viewsets import ModelViewSet
 from rest_framework.response import Response
-from testapp.models import Task, Category
-from testapp.serializers import TaskSerializer, CategorySerializer
-from django.shortcuts import render
-from testapp.forms import TaskForm
+# from testapp.models import Task, Category
+# from testapp.serializers import TaskSerializer, CategorySerializer
+# from django.shortcuts import render
+# from testapp.forms import TaskForm
 
 
 # #class TaskAPIView(APIView):
