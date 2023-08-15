@@ -1,5 +1,5 @@
 from rest_framework import routers
-from testapp.views import TaskViewSet, CategoryViewSet, home
+from testapp.views import TaskViewSet, CategoryViewSet, Home
 from django.urls import path, include
 
 
@@ -9,6 +9,6 @@ router.register("tasks", TaskViewSet, basename="task")
 router.register("categories", CategoryViewSet, basename="category")
 
 urlpatterns = [
-    path("", home, name="home"),
+    path("", Home, name="home"),
     path("api/", include(router.urls)),
 ]
